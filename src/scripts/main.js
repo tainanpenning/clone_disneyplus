@@ -1,19 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     const buttons = document.querySelectorAll("[data-tab-button]");
     const questions = document.querySelectorAll('[data-faq-question]');
-
-    const heroSection = document.querySelector(".hero");
-    const heroHeight = heroSection.clientHeight;
-
-    window.addEventListener("scroll", function(){
-        const currentPosition = window.scrollY;
-
-        if (currentPosition < heroHeight){
-            hideHeaderElements();
-        } else{
-            showHeaderElements();
-        }
-    })
     
     // Seção de atrações, programação das abas
     for (let i = 0; i < buttons.length; i++){

@@ -1,8 +1,5 @@
 @use "var";
-@use "hero";
 @use "shows";
-@use "plans";
-@use "available-devices";
 @use "faq";
 @use "footer";
 @use "header";
@@ -122,20 +119,11 @@ body{
             background-color: lighten(var.$corDeFundoBotaoSecundario, 3%);
         }
     }
-
-    &--dark{
-        background-color: rgba(var.$corDeFundoBotaoDark, 0.8);
-        border-color: var.$corTextoSecundario;
-
-        &:hover{
-            background-color: var.$corTextoSecundario;
-            color: var.$corDeFundo;
-        }
-    }
 }
 
 .image-text-section{
     padding: 5.6vw;
+    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -146,6 +134,8 @@ body{
 
     img{
         max-width: 100%;
+        border-radius: 4px;
+        margin-top: 8px;
     }
 
     &__text_container{
@@ -153,33 +143,6 @@ body{
         
         h2{
             margin-bottom: 24px;
-        }
-    }
-
-    &--image-full-width{
-        display: block;
-        position: relative;
-
-        img{
-            width: 100%;
-        }
-
-        &__text_container{
-            position: absolute;
-            top: 0;
-            left: 50%;
-            height: 100%;
-            width: calc(50% - 5.6vw);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            @media (max-width: 768px){
-                position: relative;
-                left: 0;
-                width: 100%;
-            }
-        
         }
     }
 }

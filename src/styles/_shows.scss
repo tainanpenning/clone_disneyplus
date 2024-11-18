@@ -3,6 +3,7 @@
 .shows{
     padding: 2vw 5.6vw;
     min-height: 50vw;
+    padding-top: 80px;
 
     &__list{
         margin-top: 44px;
@@ -10,18 +11,41 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        &__cast{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        &__watch_now{
+            grid-template-columns: 1fr 1fr;
+        }
+
         @media (max-width: 768px){
             grid-template-columns: 1fr 1fr;
         }
 
         &--is-active{
             display: grid;
+            justify-self: center;
         }
 
         &__item{
             img{
                 max-width: 100%;
                 border-radius: 4px;
+            }
+
+            &__link{
+                display: flex;
+                text-decoration: none;
+
+                img{
+                    height: 100%;
+                    margin-top: 6px;
+                }
+
+                div{
+                    margin-left: 10px;
+                }
             }
         }
     }

@@ -7,313 +7,200 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <header class="header header--is-hidden">
+    <header id="inicio" class="header">
         <div class="header__container">
-            <h1>
-            <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            <img class="header__logo" src="./dist/images/logos/CONSTANTINE_2014.jpg" alt="CONSTANTINE_2014">
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button button--secondary">ASSINE AGORA</a>
+                    <a href="#" class="button button--secondary">INÍCIO</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#" class="button button--dark">ENTRAR</a>
+                    <a href="#sobre_filme" class="button button--secondary">FILME</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#sobre_hq" class="button button--secondary">HQ's</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#faq" class="button button--secondary">FAQ</a>
                 </li>
             </ul>
         </div>
     </header>
-    <section class="hero">
-        <div class="hero__content">
-            <h1 class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
-            <h3 class="title--small">
-                As melhores histórias em um só lugar.
-            </h3>
-            <p>
-                <a href="#" class="link-text">Assinar o Disney+</a>
-                <br>
-                <span class="text">
-                    R$ 27,90/mês ou R$ 279,90/ano à vista*
-                </span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button class="button">ASSINE AGORA</button>
-                    <span class="text">R$45,90/mês*</span>
-                </li>
-                <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-                    <button class="button">ASSINE AGORA</button>
-                    <span class="text">R$45,90/mês*</span>
-                </li>
-            </ul>
-            <p class="text--small">
-                *O preço pode variar caso a assinatura seja feita através de outras plataformas
-            </p>
-        </div>
-    </section>
-    <section class="shows">
+    <iframe class="video" src="https://www.youtube.com/watch?v=DEa508Xmmio" frameborder="0"></iframe>
+    <section id="ver_agora" class="shows">
         <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
-                EM BREVE
+            <button data-tab-button="cast" class="shows__tabs__button shows__tabs__button--is-active">
+                ELENCO
             </button>
-            <button data-tab-button="populares" class="shows__tabs__button">
-                MAIS POPULARES
+            <button data-tab-button="scenes" class="shows__tabs__button">
+                CENAS
             </button>
-            <button data-tab-button="star_plus" class="shows__tabs__button">
-                MAIS NO STAR+
+            <button data-tab-button="watch_now" class="shows__tabs__button">
+                ASSISTA AGORA
             </button>
         </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+        <ul data-tab-id="cast" class="shows__list shows__list__cast shows__list--is-active">
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./dist/images/cast/keanu_reeves.jfif" alt="keanu_reeves">
+                <p class="text--big">Keanu Reeves</p>
+                <p class="text--small">John Constantine</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+                <img src="./dist/images/cast/djimon_hounsou.jfif" alt="djimon_hounsou">
+                <p class="text--big">Djimon Hounsou</p>
+                <p class="text--small">Papa Midnite</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem">
+                <img src="./dist/images/cast/gavin_rossdale.jfif" alt="gavin_rossdale">
+                <p class="text--big">Gavin Rossdale</p>
+                <p class="text--small">Balthazar</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
+                <img src="./dist/images/cast/peter_stormare.jfif" alt="peter_stormare">
+                <p class="text--big">Peter Stormare</p>
+                <p class="text--small">Lúcifer</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The Santa">
+                <img src="./dist/images/cast/pruitt_taylor_vince.jfif" alt="pruitt_taylor_vince">
+                <p class="text--big">Pruitt Taylor Vince</p>
+                <p class="text--small">Padre Hennessy</p>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+                <img src="./dist/images/cast/rachel_weisz.jfif" alt="rachel_weisz">
+                <p class="text--big">Rachel Weisz</p>
+                <p class="text--small">Isabel Dodson, Angela Dodson</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cast/shia_labeouf.jfif" alt="shia_labeouf">
+                <p class="text--big">Shia Labeouf</p>
+                <p class="text--small">Chas Kramer</p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/cast/tilda_swinton.jfif" alt="tilda_swinton">
+                <p class="text--big">Tilda Swinton</p>
+                <p class="text--small">Anjo Gabriel</p>
             </li>
         </ul>
-        <ul data-tab-id="populares" class="shows__list">
+        <ul data-tab-id="scenes" class="shows__list">
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
+                <img src="./dist/images/scenes/Constantine_Scene_81.jfif" alt="Cena_81">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleira da Lua">
+                <img src="./dist/images/scenes/Constantine_Scene_82.jfif" alt="Cena_82">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="Dr Pol">
+                <img src="./dist/images/scenes/Constantine_Scene_83.jfif" alt="Cena_83">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
+                <img src="./dist/images/scenes/Constantine_Scene_84.jpg" alt="Cena_84">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
+                <img src="./dist/images/scenes/Constantine_Scene_85.jpg" alt="Cena_85">
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo Igual SQN">
+                <img src="./dist/images/scenes/Constantine_Scene_86.jpg" alt="Cena_86">
             </li>
         </ul>
-        <ul data-tab-id="star_plus" class="shows__list">
+        <ul data-tab-id="watch_now" class="shows__list shows__list__watch_now">
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
+                <a target="_blank" class="shows__list__item__link" href="https://www.primevideo.com/dp/amzn1.dv.gti.f4ac5a1f-1760-d541-b9fd-b7621af2f8cf?autoplay=0&ref_=atv_cf_strg_wb">
+                    <img src="./dist/images/logos/amazon_prime_40x40.png" alt="amazon_prime">
+                    <div>
+                        <p class="text--big">Amazon Prime Video</p>
+                        <p class="text--small">Assinatura Premium</p>
+                    </div>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
+                <a target="_blank" class="shows__list__item__link" href="https://tv.apple.com/br/movie/constantine/umc.cmc.1jnkmvwctuhdmqgz0q388b6qd">
+                    <img src="./dist/images/logos/apple_tv_plus_40x40.png" alt="apple_tv_plus">
+                    <div>
+                        <p class="text--big">Apple TV</p>
+                        <p class="text--small">A partir de R$ 7,90</p>
+                    </div>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA">
+                <a target="_blank" class="shows__list__item__link" href="https://www.max.com/br/pt/movies/constantine/6b8a684f-36cf-434d-ae9b-6e43cd76583e">
+                    <img src="./dist/images/logos/max_40x40.png" alt="max">
+                    <div>
+                        <p class="text--big">Max</p>
+                        <p class="text--small">Assinatura</p>
+                    </div>
+                </a>
             </li>
             <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpsons">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
+                <a target="_blank" class="shows__list__item__link" href="https://www.youtube.com/watch?v=I9dkp1ZFM8U">
+                    <img src="./dist/images/logos/youtube_40x40.png" alt="youtube">
+                    <div>
+                        <p class="text--big">YouTube</p>
+                        <p class="text--small">A partir de R$ 7,90</p>
+                    </div>
+                </a>
             </li>
         </ul>
     </section>
-    <section class="plans">
-        <h2 class="title--big">Escolha seu plano</h2>
-        <ul class="plans__list">
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 27,90/mês*</strong>
-                <p class="text--big">
-                    No Disney+ você encotra as últimas estreias do cinema, originais e clássicos inesquecíveis.
-                </p>
-                <button class="button">ASSINE AGORA</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
-                <strong class="title--small">R$ 45,90/mês*</strong>
-                <p class="text--big">
-                    Assine o Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
-                </p>
-                <button class="button">ASSINE AGORA</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 55,90/mês*</strong>
-                <p class="text--big">
-                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
-                </p>
-                <button class="button">ASSINE AGORA</button>
-            </li>
-        </ul>
-        <p class="text--small">
-            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
-        </p>
-    </section>
-    <section class="image-text-section">
-        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV, Computador, Tablet e Celular">
+    <section id="sobre_filme" class="image-text-section">
+        <img src="./dist/images/constantine_filme.jpeg" alt="constantine_filme">
         <div class="image-text-section__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
+            <h2 class="title">Sobre o Filme</h2>
             <p class="text--big">
-                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+                O filme Constantine foi lançado em 2005 e é baseado no personagem John Constantine, da série de quadrinhos Hellblazer da DC Comics (publicado sob o selo Vertigo). É um thriller sobrenatural que combina elementos de ação, terror e fantasia, dirigido por Francis Lawrence e estrelado por Keanu Reeves.
             </p>
+            <p class="text--big">
+                O filme segue John Constantine (Keanu Reeves), um detetive ocultista e exorcista que tem a habilidade de ver anjos e demônios que andam na Terra em suas formas verdadeiras. Ele foi condenado ao inferno após uma tentativa de suicídio na juventude, mas agora tenta ganhar redenção ajudando outras pessoas, embora de forma cínica e amarga.
+            </p>
+            <a class="button" href="#ver_agora">VER FILME</a>
         </div>
     </section>
-    <section class="image-text-section image-text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
-            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
-        </picture>
-        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
-            <h2 class="title">Baixe filmes e séries</h2>
+    <section id="sobre_hq" class="image-text-section">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Sobre as HQs</h2>
             <p class="text--big">
-                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
+                As HQs de Constantine, originalmente publicadas sob o título Hellblazer, são uma das séries mais emblemáticas do selo Vertigo da DC Comics. O personagem John Constantine foi criado por Alan Moore, Stephen R. Bissette, e John Totleben em 1985, durante a fase de Moore nos quadrinhos de Monstro do Pântano (Swamp Thing).
             </p>
+            <p class="text--big">
+                John Constantine foi concebido como um mago contemporâneo, um anti-herói cínico e sarcástico, com uma visão de mundo sombria. Sua aparência foi inspirada no músico Sting (da banda The Police). Desde sua primeira aparição, Constantine se destacou por ser um personagem extremamente humano, com falhas, dúvidas e uma moral ambígua.
+            </p>
+            <a class="button" target="_blank" href="https://www.amazon.com.br/constantine-hq/s?k=constantine+hq">VER HQ's</a>
         </div>
+        <img src="./dist/images/constantine_hq.jpg" alt="constantine_hq">
     </section>
-    <section class="available-devices">
-        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
-        <ul class="available-devices__list">
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
-                <h4 class="title--small">Computador</h4>
-                <ul class="text">
-                    <li>Chrome OS</li>
-                    <li>Mac OS</li>
-                    <li>PC Windows</li>
-                </ul>
-            </li>
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/tv.png" alt="Computador">
-                <h4 class="title--small">TV</h4>
-                <ul class="text">
-                    <li>Amazon Fire TV</li>
-                    <li>Android TV</li>
-                    <li>Apple TV</li>
-                    <li>Chromecast</li>
-                    <li>TVs LG</li>
-                    <li>Roku</li>
-                    <li>Samsung</li>
-                </ul>
-            </li>
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/videogames.png" alt="Computador">
-                <h4 class="title--small">Videogames</h4>
-                <ul class="text">
-                    <li>PS4</li>
-                    <li>PS5</li>
-                    <li>Xbox One</li>
-                    <li>Xbox Series S</li>
-                    <li>Xbox Series X</li>
-                </ul>
-            </li>
-            <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/celular.png" alt="Computador">
-                <h4 class="title--small">Celulares e tablets</h4>
-                <ul class="text">
-                    <li>Tablets Amazon Fire</li>
-                    <li>Celulares e Tablets Andriod</li>
-                    <li>iPhone e iPad</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section class="faq">
+    <section id="faq" class="faq">
         <h2 class="title">Perguntas Frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    O que está incluído no Disney+?
+                    Qual a história do Constantine?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Benefícios de assinar o Disney+:
-                    <ul class="faq__questions__item__answer__list">
-                        <li class="faq__questions__item__answer__list__item">
-                            Estreias de filmes, séries originais e clássicos da Disney, Pixar, Marvel, Star Wars, National Geographic e Star.
-                        </li>
-                        <li class="faq__questions__item__answer__list__item">
-                            Os torneios mais importantes do mundo e programas da ESPN ao vivo.
-                        </li>
-                        <li class="faq__questions__item__answer__list__item">
-                            Até quatro telas ao mesmo tempo com o Disney+ Premium, e até duas com o Disney+ Padrão.
-                        </li>
-                        <li class="faq__questions__item__answer__list__item">
-                            Downloads, criação de perfis e controle parental para personalizar a experiência por idade, de acordo com o seu plano.
-                        </li>
-                    </ul>
+                    Originalmente, John Constantine era um humano normal com muitos conhecimentos mágicos e ocultos. Porém, ele acabou ganhando "poderes" demoníacos depois de uma transfusão de sangue feita com o demônio Nergal. Por conta disso, ele é capaz de se regenerar mais rapidamente que o habitual.
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Quais formas de pagamento posso utilizar?
+                    Quando lançará Constantine 2?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple, Mercado Livre e provedores locais de TV, telefonia e internet.
+                    Constantine 2 foi confirmado em setembro de 2022 e não tem previsão de estreia até o momento. 
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Onde posso assistir ao Disney+?
+                    Porque Constantine vai para o inferno?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a 
-                    <a target="_blank" href="https://help.disneyplus.com/pt-BR/article/disneyplus-devices-supported/">
-                        lista completa de dispositivos compatíveis na Central de Ajuda
-                    </a>.
+                    John Constantine (Keanu Reeves) nasceu com o dom/maldição de enxergar seres sobrenaturais. Atormentado por essas visões e dado como louco ainda na adolescência, Constantine tenta o suicídio. Conforme as regras, o suicida tem passagem garantida para o inferno e é lá que Constantine vai parar.
                 </div>
             </li>
         </ul>
     </section>
     <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
-            <ul class="footer__links">
-                <li class="footer__links__item">
-                    <div class="language-selector">
-                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
-                        <select>
-                            <option>English</option>
-                            <option selected>Português</option>
-                        </select>
-                    </div>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Termos e Condições de Uso</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Política de Privacidade</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Anúncios Personalizados</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Dispositivos Compatíveis</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Ajuda</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Sobre o Disney+</a>
-                </li>
-            </ul>
             <p class="text--small">
-                © 2024 Disney e suas empresas afiliadas. Todos os direitos reservados. <br>
-                A programação do conteúdo esportivo varia de acordo com o plano. Para usar o Disney+, é necessário ser assinante e ter mais de 18 anos de idade. Conteúdo sujeito a disponibilidade. <br>
-                O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+                © 2024 Curso EBAC - editado por Tainan H. Penning.
             </p>
-            </div>
+        </div>
     </footer>   
 
     <script src="./dist/js/main.js"></script>
