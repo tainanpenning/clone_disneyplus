@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", function(){
     const buttons = document.querySelectorAll("[data-tab-button]");
     const questions = document.querySelectorAll('[data-faq-question]');
+    const headerButton = document.getElementById("header-button");
+    const headerMenu = document.getElementById("header-menu");
+    const headerMenuItems = document.getElementById("header-menu-items")
+
+    //  Menu Hamburguer
+    headerButton.addEventListener("click", () =>{
+        headerMenu.classList.add("header__container__menu--is-active");
+        headerMenuItems.classList.toggle("header__links--is-active");
+    })
     
     // Seção de atrações, programação das abas
     for (let i = 0; i < buttons.length; i++){
@@ -19,16 +28,6 @@ document.addEventListener("DOMContentLoaded", function(){
         questions[i].addEventListener('click', openCloseAnswer);
     }
 })
-
-function hideHeaderElements(){
-    const header = document.querySelector("header");
-    header.classList.add("header--is-hidden");
-}
-
-function showHeaderElements(){
-    const header = document.querySelector("header");
-    header.classList.remove("header--is-hidden");
-}
 
 function openCloseAnswer(element){
     const className = 'faq__questions__item--is-open';

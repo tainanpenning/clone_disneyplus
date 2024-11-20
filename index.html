@@ -7,204 +7,239 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <header id="inicio" class="header">
-        <div class="header__container">
-            <img class="header__logo" src="./dist/images/logos/CONSTANTINE_2014.jpg" alt="CONSTANTINE_2014">
-            <ul class="header__links">
-                <li class="header__links__item">
-                    <a href="#" class="button button--secondary">INÍCIO</a>
+    <div class="container">
+        <header id="inicio" class="header">
+            <div class="header__container">
+                <img class="header__logo" src="./dist/images/logos/CONSTANTINE_2014.jpg" alt="CONSTANTINE_2014">
+                <button id="header-button" class="header__button">MENU</button>
+                <ul class="header__links">
+                    <li class="header__links__item">
+                        <a href="#" class="button button--secondary">INÍCIO</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#sobre_filme" class="button button--secondary">FILME</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#sobre_hq" class="button button--secondary">HQ's</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#faq" class="button button--secondary">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="header-menu" class="header__container__menu header__container__menu--is-active">
+                <ul id="header-menu-items" class="header__links__menu">
+                    <li class="header__links__item">
+                        <a href="#" class="button button--secondary">INÍCIO</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#sobre_filme" class="button button--secondary">FILME</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#sobre_hq" class="button button--secondary">HQ's</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#faq" class="button button--secondary">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <video width="100%" height="560" controls loop poster="dist/images/poster.jpg">
+            <source src="dist/images/Constantine (2005) Official Trailer _ 1 - Keanu Reeves Movie HD(720P_HD).mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+        </video>
+        <section id="ver_agora" class="shows">
+            <nav class="shows__tabs">
+                <button data-tab-button="cast" class="shows__tabs__button shows__tabs__button--is-active">
+                    ELENCO
+                </button>
+                <button data-tab-button="scenes" class="shows__tabs__button">
+                    CENAS
+                </button>
+                <button data-tab-button="watch_now" class="shows__tabs__button">
+                    ASSISTA AGORA
+                </button>
+            </nav>
+            <ul data-tab-id="cast" class="shows__list shows__list__cast shows__list--is-active">
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/keanu_reeves.jfif" alt="keanu_reeves">
+                    <div>
+                        <p class="text--big">Keanu Reeves</p>
+                        <p class="text--small">John Constantine</p>
+                    </div>
                 </li>
-                <li class="header__links__item">
-                    <a href="#sobre_filme" class="button button--secondary">FILME</a>
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/djimon_hounsou.jfif" alt="djimon_hounsou">
+                    <div>
+                        <p class="text--big">Djimon Hounsou</p>
+                        <p class="text--small">Papa Midnite</p>
+                    </div>
                 </li>
-                <li class="header__links__item">
-                    <a href="#sobre_hq" class="button button--secondary">HQ's</a>
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/gavin_rossdale.jfif" alt="gavin_rossdale">
+                    <div>
+                        <p class="text--big">Gavin Rossdale</p>
+                        <p class="text--small">Balthazar</p>
+                    </div>
                 </li>
-                <li class="header__links__item">
-                    <a href="#faq" class="button button--secondary">FAQ</a>
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/peter_stormare.jfif" alt="peter_stormare">
+                    <div>
+                        <p class="text--big">Peter Stormare</p>
+                        <p class="text--small">Lúcifer</p>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/pruitt_taylor_vince.jfif" alt="pruitt_taylor_vince">
+                    <div>
+                        <p class="text--big">Pruitt Taylor Vince</p>
+                        <p class="text--small">Padre Hennessy</p>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/rachel_weisz.jfif" alt="rachel_weisz">
+                    <div>
+                        <p class="text--big">Rachel Weisz</p>
+                        <p class="text--small">Isabel Dodson, Angela Dodson</p>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/shia_labeouf.jfif" alt="shia_labeouf">
+                    <div>
+                        <p class="text--big">Shia Labeouf</p>
+                        <p class="text--small">Chas Kramer</p>
+                    </div>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/cast/tilda_swinton.jfif" alt="tilda_swinton">
+                    <div>
+                        <p class="text--big">Tilda Swinton</p>
+                        <p class="text--small">Anjo Gabriel</p>
+                    </div>
                 </li>
             </ul>
-        </div>
-    </header>
-    <video width="100%" height="700" controls autoplay loop poster="dist/images/poster.jpg">
-        <source src="dist/images/Constantine (2005) Official Trailer _ 1 - Keanu Reeves Movie HD(720P_HD).mp4" type="video/mp4">
-        Seu navegador não suporta a reprodução de vídeo.
-    </video>
-    <section id="ver_agora" class="shows">
-        <nav class="shows__tabs">
-            <button data-tab-button="cast" class="shows__tabs__button shows__tabs__button--is-active">
-                ELENCO
-            </button>
-            <button data-tab-button="scenes" class="shows__tabs__button">
-                CENAS
-            </button>
-            <button data-tab-button="watch_now" class="shows__tabs__button">
-                ASSISTA AGORA
-            </button>
-        </nav>
-        <ul data-tab-id="cast" class="shows__list shows__list__cast shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/keanu_reeves.jfif" alt="keanu_reeves">
-                <p class="text--big">Keanu Reeves</p>
-                <p class="text--small">John Constantine</p>
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/djimon_hounsou.jfif" alt="djimon_hounsou">
-                <p class="text--big">Djimon Hounsou</p>
-                <p class="text--small">Papa Midnite</p>
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/gavin_rossdale.jfif" alt="gavin_rossdale">
-                <p class="text--big">Gavin Rossdale</p>
-                <p class="text--small">Balthazar</p>
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/peter_stormare.jfif" alt="peter_stormare">
-                <p class="text--big">Peter Stormare</p>
-                <p class="text--small">Lúcifer</p>
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/pruitt_taylor_vince.jfif" alt="pruitt_taylor_vince">
-                <p class="text--big">Pruitt Taylor Vince</p>
-                <p class="text--small">Padre Hennessy</p>
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/rachel_weisz.jfif" alt="rachel_weisz">
-                <p class="text--big">Rachel Weisz</p>
-                <p class="text--small">Isabel Dodson, Angela Dodson</p>
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/shia_labeouf.jfif" alt="shia_labeouf">
-                <p class="text--big">Shia Labeouf</p>
-                <p class="text--small">Chas Kramer</p>
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cast/tilda_swinton.jfif" alt="tilda_swinton">
-                <p class="text--big">Tilda Swinton</p>
-                <p class="text--small">Anjo Gabriel</p>
-            </li>
-        </ul>
-        <ul data-tab-id="scenes" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./dist/images/scenes/Constantine_Scene_81.jfif" alt="Cena_81">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/scenes/Constantine_Scene_82.jfif" alt="Cena_82">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/scenes/Constantine_Scene_83.jfif" alt="Cena_83">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/scenes/Constantine_Scene_84.jpg" alt="Cena_84">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/scenes/Constantine_Scene_85.jpg" alt="Cena_85">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/scenes/Constantine_Scene_86.jpg" alt="Cena_86">
-            </li>
-        </ul>
-        <ul data-tab-id="watch_now" class="shows__list shows__list__watch_now">
-            <li class="shows__list__item">
-                <a target="_blank" class="shows__list__item__link" href="https://www.primevideo.com/dp/amzn1.dv.gti.f4ac5a1f-1760-d541-b9fd-b7621af2f8cf?autoplay=0&ref_=atv_cf_strg_wb">
-                    <img src="./dist/images/logos/amazon_prime_40x40.png" alt="amazon_prime">
-                    <div>
-                        <p class="text--big">Amazon Prime Video</p>
-                        <p class="text--small">Assinatura Premium</p>
+            <ul data-tab-id="scenes" class="shows__list">
+                <li class="shows__list__item">
+                    <img src="./dist/images/scenes/Constantine_Scene_81.jfif" alt="Cena_81">
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/scenes/Constantine_Scene_82.jfif" alt="Cena_82">
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/scenes/Constantine_Scene_83.jfif" alt="Cena_83">
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/scenes/Constantine_Scene_84.jpg" alt="Cena_84">
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/scenes/Constantine_Scene_85.jpg" alt="Cena_85">
+                </li>
+                <li class="shows__list__item">
+                    <img src="./dist/images/scenes/Constantine_Scene_86.jpg" alt="Cena_86">
+                </li>
+            </ul>
+            <ul data-tab-id="watch_now" class="shows__list shows__list__watch_now">
+                <li class="shows__list__item">
+                    <a target="_blank" class="shows__list__item__link" href="https://www.primevideo.com/dp/amzn1.dv.gti.f4ac5a1f-1760-d541-b9fd-b7621af2f8cf?autoplay=0&ref_=atv_cf_strg_wb">
+                        <img src="./dist/images/logos/amazon_prime_40x40.png" alt="amazon_prime">
+                        <div>
+                            <p class="text--big">Amazon Prime Video</p>
+                            <p class="text--small">Assinatura Premium</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="shows__list__item">
+                    <a target="_blank" class="shows__list__item__link" href="https://tv.apple.com/br/movie/constantine/umc.cmc.1jnkmvwctuhdmqgz0q388b6qd">
+                        <img src="./dist/images/logos/apple_tv_plus_40x40.png" alt="apple_tv_plus">
+                        <div>
+                            <p class="text--big">Apple TV</p>
+                            <p class="text--small">A partir de R$ 7,90</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="shows__list__item">
+                    <a target="_blank" class="shows__list__item__link" href="https://www.max.com/br/pt/movies/constantine/6b8a684f-36cf-434d-ae9b-6e43cd76583e">
+                        <img src="./dist/images/logos/max_40x40.png" alt="max">
+                        <div>
+                            <p class="text--big">Max</p>
+                            <p class="text--small">Assinatura</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="shows__list__item">
+                    <a target="_blank" class="shows__list__item__link" href="https://www.youtube.com/watch?v=I9dkp1ZFM8U">
+                        <img src="./dist/images/logos/youtube_40x40.png" alt="youtube">
+                        <div>
+                            <p class="text--big">YouTube</p>
+                            <p class="text--small">A partir de R$ 7,90</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="sobre_filme" class="image-text-section">
+            <img src="./dist/images/constantine_filme.jpeg" alt="constantine_filme">
+            <div class="image-text-section__text_container">
+                <h2 class="title">Sobre o Filme</h2>
+                <p class="text--big">
+                    O filme Constantine foi lançado em 2005 e é baseado no personagem John Constantine, da série de quadrinhos Hellblazer da DC Comics (publicado sob o selo Vertigo). É um thriller sobrenatural que combina elementos de ação, terror e fantasia, dirigido por Francis Lawrence e estrelado por Keanu Reeves.
+                </p>
+                <p class="text--big">
+                    O filme segue John Constantine (Keanu Reeves), um detetive ocultista e exorcista que tem a habilidade de ver anjos e demônios que andam na Terra em suas formas verdadeiras. Ele foi condenado ao inferno após uma tentativa de suicídio na juventude, mas agora tenta ganhar redenção ajudando outras pessoas, embora de forma cínica e amarga.
+                </p>
+                <a class="button" href="#ver_agora">VER FILME</a>
+            </div>
+        </section>
+        <section id="sobre_hq" class="image-text-section">
+            <div class="image-text-section__text_container">
+                <h2 class="title">Sobre as HQs</h2>
+                <p class="text--big">
+                    As HQs de Constantine, originalmente publicadas sob o título Hellblazer, são uma das séries mais emblemáticas do selo Vertigo da DC Comics. O personagem John Constantine foi criado por Alan Moore, Stephen R. Bissette, e John Totleben em 1985, durante a fase de Moore nos quadrinhos de Monstro do Pântano (Swamp Thing).
+                </p>
+                <p class="text--big">
+                    John Constantine foi concebido como um mago contemporâneo, um anti-herói cínico e sarcástico, com uma visão de mundo sombria. Sua aparência foi inspirada no músico Sting (da banda The Police). Desde sua primeira aparição, Constantine se destacou por ser um personagem extremamente humano, com falhas, dúvidas e uma moral ambígua.
+                </p>
+                <a class="button" target="_blank" href="https://www.amazon.com.br/constantine-hq/s?k=constantine+hq">VER HQ's</a>
+            </div>
+            <img src="./dist/images/constantine_hq.jpg" alt="constantine_hq">
+        </section>
+        <section id="faq" class="faq">
+            <h2 class="title">Perguntas Frequentes</h2>
+            <ul class="faq__questions">
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Qual a história do Constantine?
                     </div>
-                </a>
-            </li>
-            <li class="shows__list__item">
-                <a target="_blank" class="shows__list__item__link" href="https://tv.apple.com/br/movie/constantine/umc.cmc.1jnkmvwctuhdmqgz0q388b6qd">
-                    <img src="./dist/images/logos/apple_tv_plus_40x40.png" alt="apple_tv_plus">
-                    <div>
-                        <p class="text--big">Apple TV</p>
-                        <p class="text--small">A partir de R$ 7,90</p>
+                    <div class="faq__questions__item__answer text--big">
+                        Originalmente, John Constantine era um humano normal com muitos conhecimentos mágicos e ocultos. Porém, ele acabou ganhando "poderes" demoníacos depois de uma transfusão de sangue feita com o demônio Nergal. Por conta disso, ele é capaz de se regenerar mais rapidamente que o habitual.
                     </div>
-                </a>
-            </li>
-            <li class="shows__list__item">
-                <a target="_blank" class="shows__list__item__link" href="https://www.max.com/br/pt/movies/constantine/6b8a684f-36cf-434d-ae9b-6e43cd76583e">
-                    <img src="./dist/images/logos/max_40x40.png" alt="max">
-                    <div>
-                        <p class="text--big">Max</p>
-                        <p class="text--small">Assinatura</p>
+                </li>
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Quando lançará Constantine 2?
                     </div>
-                </a>
-            </li>
-            <li class="shows__list__item">
-                <a target="_blank" class="shows__list__item__link" href="https://www.youtube.com/watch?v=I9dkp1ZFM8U">
-                    <img src="./dist/images/logos/youtube_40x40.png" alt="youtube">
-                    <div>
-                        <p class="text--big">YouTube</p>
-                        <p class="text--small">A partir de R$ 7,90</p>
+                    <div class="faq__questions__item__answer text--big">
+                        Constantine 2 foi confirmado em setembro de 2022 e não tem previsão de estreia até o momento. 
                     </div>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <section id="sobre_filme" class="image-text-section">
-        <img src="./dist/images/constantine_filme.jpeg" alt="constantine_filme">
-        <div class="image-text-section__text_container">
-            <h2 class="title">Sobre o Filme</h2>
-            <p class="text--big">
-                O filme Constantine foi lançado em 2005 e é baseado no personagem John Constantine, da série de quadrinhos Hellblazer da DC Comics (publicado sob o selo Vertigo). É um thriller sobrenatural que combina elementos de ação, terror e fantasia, dirigido por Francis Lawrence e estrelado por Keanu Reeves.
-            </p>
-            <p class="text--big">
-                O filme segue John Constantine (Keanu Reeves), um detetive ocultista e exorcista que tem a habilidade de ver anjos e demônios que andam na Terra em suas formas verdadeiras. Ele foi condenado ao inferno após uma tentativa de suicídio na juventude, mas agora tenta ganhar redenção ajudando outras pessoas, embora de forma cínica e amarga.
-            </p>
-            <a class="button" href="#ver_agora">VER FILME</a>
-        </div>
-    </section>
-    <section id="sobre_hq" class="image-text-section">
-        <div class="image-text-section__text_container">
-            <h2 class="title">Sobre as HQs</h2>
-            <p class="text--big">
-                As HQs de Constantine, originalmente publicadas sob o título Hellblazer, são uma das séries mais emblemáticas do selo Vertigo da DC Comics. O personagem John Constantine foi criado por Alan Moore, Stephen R. Bissette, e John Totleben em 1985, durante a fase de Moore nos quadrinhos de Monstro do Pântano (Swamp Thing).
-            </p>
-            <p class="text--big">
-                John Constantine foi concebido como um mago contemporâneo, um anti-herói cínico e sarcástico, com uma visão de mundo sombria. Sua aparência foi inspirada no músico Sting (da banda The Police). Desde sua primeira aparição, Constantine se destacou por ser um personagem extremamente humano, com falhas, dúvidas e uma moral ambígua.
-            </p>
-            <a class="button" target="_blank" href="https://www.amazon.com.br/constantine-hq/s?k=constantine+hq">VER HQ's</a>
-        </div>
-        <img src="./dist/images/constantine_hq.jpg" alt="constantine_hq">
-    </section>
-    <section id="faq" class="faq">
-        <h2 class="title">Perguntas Frequentes</h2>
-        <ul class="faq__questions">
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Qual a história do Constantine?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    Originalmente, John Constantine era um humano normal com muitos conhecimentos mágicos e ocultos. Porém, ele acabou ganhando "poderes" demoníacos depois de uma transfusão de sangue feita com o demônio Nergal. Por conta disso, ele é capaz de se regenerar mais rapidamente que o habitual.
-                </div>
-            </li>
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Quando lançará Constantine 2?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    Constantine 2 foi confirmado em setembro de 2022 e não tem previsão de estreia até o momento. 
-                </div>
-            </li>
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question>
-                    Porque Constantine vai para o inferno?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    John Constantine (Keanu Reeves) nasceu com o dom/maldição de enxergar seres sobrenaturais. Atormentado por essas visões e dado como louco ainda na adolescência, Constantine tenta o suicídio. Conforme as regras, o suicida tem passagem garantida para o inferno e é lá que Constantine vai parar.
-                </div>
-            </li>
-        </ul>
-    </section>
-    <footer class="footer">
-        <div class="footer__container">
-            <p class="text--small">
-                © 2024 Curso EBAC - editado por Tainan H. Penning.
-            </p>
-        </div>
-    </footer>   
+                </li>
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Porque Constantine vai para o inferno?
+                    </div>
+                    <div class="faq__questions__item__answer text--big">
+                        John Constantine (Keanu Reeves) nasceu com o dom/maldição de enxergar seres sobrenaturais. Atormentado por essas visões e dado como louco ainda na adolescência, Constantine tenta o suicídio. Conforme as regras, o suicida tem passagem garantida para o inferno e é lá que Constantine vai parar.
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="text--small">
+                    © 2024 Curso EBAC - editado por Tainan H. Penning.
+                </p>
+            </div>
+        </footer>
+    </div>   
 
     <script src="./dist/js/main.js"></script>
 </body>

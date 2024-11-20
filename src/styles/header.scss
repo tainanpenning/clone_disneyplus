@@ -12,6 +12,15 @@
         display: flex;
         justify-content: space-between;
 
+        &__menu{
+            display: none;
+
+            &--is-active{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
         @media (max-width: 768px){
             padding: 0 12px 0 20px;
         }
@@ -24,8 +33,45 @@
         margin-left: -10px;
     }
 
+    &__button{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        font-size: 16px;
+        color: var.$corTextoSecundario;
+        background-color: var.$corDeFundoBotaoSecundario;
+        border-radius: 4px;
+        text-decoration: none;
+        padding: 8px 14px;
+        margin: 5px;
+        letter-spacing: 1px;
+        border: 1px solid var.$corDeFundoBotaoSecundario;
+
+        &:hover{
+            cursor: pointer;
+            background-color: lighten(var.$corDeFundoBotaoSecundario, 3%);
+        }
+
+        @media (max-width: 768px){
+            display: flex;
+            height: 40px;
+        }
+    }
+
     &__links{
         display: flex;
+
+        &__menu{
+            display: none;
+        }
+        @media (max-width: 768px){
+            display: none;
+            
+            &--is-active{
+                display: flex;
+            }
+        }
 
         &__item{
             list-style: none;

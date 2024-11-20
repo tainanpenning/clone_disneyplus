@@ -23,6 +23,12 @@
     font-family: Avenir, sans-serif;
 }
 
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 body{
     background-color: var.$corDeFundo;
 }
@@ -123,19 +129,34 @@ body{
 
 .image-text-section{
     padding: 5.6vw;
-    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
     @media (max-width: 768px){
         display: block;
+        
+        img{
+            margin: 12px 0px 12px;
+        }
+    }
+
+    @media (max-width: 1023px){
+        display: flex;
+        flex-direction: column;
+
+        img{
+            margin: 12px 0px 12px;
+        }
     }
 
     img{
         max-width: 100%;
         border-radius: 4px;
-        margin-top: 8px;
+    }
+
+    .button{
+        margin-top: 12px;
     }
 
     &__text_container{
